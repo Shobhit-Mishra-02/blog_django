@@ -6,10 +6,10 @@
 
 <!-- cards for the posts  -->
 <div class="container my-5">
-
+    {% load static %}
     {% for i in content %}
     <div class="card mb-3 my-2 mx-2">
-        <img src="https://source.unsplash.com/user/erondu/daily" class="card-img-top" alt="..." height="200px">
+        <img src="{% static 'test_img2.jpg' %}" class="card-img-top" alt="..." height="200px">
         <div class="card-body">
             <h5 class="card-title">{{ i.title }}</h5>
             <p class="card-text">{{ i.desc }}</p>

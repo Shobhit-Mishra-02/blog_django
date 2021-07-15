@@ -17,7 +17,8 @@ def about(request):
 
 def postview(request, id):
     req_post = post.objects.filter(id = id)
-    return render(request, 'postview.html',{'content':req_post})
+    links = post.objects.filter(tag = req_post[0].tag)
+    return render(request, 'postview.html',{'content':req_post, 'links':links})
 
 def search(request):
     return render(request, 'search.html')

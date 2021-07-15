@@ -8,7 +8,7 @@
         <div class="col-md-6 px-0">
           <h1 class="display-4 fst-italic">{{ content.2.title }}</h1>
           <p class="lead my-3">{{ content.2.desc }}</p>
-          <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
+          <p class="lead mb-0"><a href="/postview/{{content.2.id}}" class="text-white fw-bold">Continue reading...</a></p>
         </div>
       </div>
 </div>
@@ -21,7 +21,7 @@
             <h3 class="mb-0">{{ content.1.title }}</h3>
             <div class="mb-1 text-muted">{{ content.1.pub_date|timesince }}</div>
             <p class="card-text mb-auto">{{ content.1.desc }}</p>
-            <a href="#" class="stretched-link">Continue reading</a>
+            <a href="/postview/{{content.1.id}}" class="stretched-link">Continue reading</a>
           </div>
           <div class="col-auto d-none d-lg-block">
             <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
@@ -36,7 +36,7 @@
             <h3 class="mb-0">{{ content.0.title }}</h3>
             <div class="mb-1 text-muted">{{ content.0.pub_date|timesince }}</div>
             <p class="card-text mb-auto">{{ content.0.desc }}</p>
-            <a href="#" class="stretched-link">Continue reading</a>
+            <a href="/postview/{{content.0.id}}" class="stretched-link">Continue reading</a>
           </div>
           <div class="col-auto d-none d-lg-block">
             <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
