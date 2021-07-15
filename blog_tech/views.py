@@ -21,4 +21,8 @@ def postview(request, id):
     return render(request, 'postview.html',{'content':req_post, 'links':links})
 
 def search(request):
-    return render(request, 'search.html')
+    if request.method == 'GET':
+        search_name = request.GET.get('search')
+        req_posts = post.objects.filter(title__icontains=f'{search_name}')
+
+    return render(request, 'search.html',{'content':req_posts})
