@@ -9,3 +9,9 @@ def blog(request):
 
 def about(request):
     return render(request, 'about.html')
+
+def postview(request):
+    return render(request, 'postview.html')
+
+def search(request):
+    return render(request, 'search.html')
